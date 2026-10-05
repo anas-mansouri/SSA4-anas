@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './home.css',
 })
 export class Home {
-  nom ="eya";
+  nom ="Anas";
   imgurl="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Angular_gradient_logo.png/1280px-Angular_gradient_logo.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
 
   bonjour() {alert('Bonjour ');}
@@ -24,7 +24,7 @@ export class Home {
     {name:"Aymen",age:23},
     {name:"Anis",age:24}
   ]
-  
+
   count=0;
   counts=signal(0);
   incrementSimple(){
