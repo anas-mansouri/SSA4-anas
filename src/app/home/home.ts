@@ -8,7 +8,11 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './home.css',
 })
 export class Home {
+<<<<<<< HEAD
   nom ="ons";
+=======
+  nom ="Anas";
+>>>>>>> 0da46011c4d41811833ef7f32ded61b4167333ce
   imgurl="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Angular_gradient_logo.png/1280px-Angular_gradient_logo.png?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
 
   bonjour() {alert('Bonjour ');}
@@ -25,6 +29,7 @@ export class Home {
     {name:"Anis",age:24}
   ]
 
+<<<<<<< HEAD
 //
 count=0;
 //signal
@@ -36,5 +41,14 @@ incrementSimple(){
 ///signal
 increment() {
     this.counts.update(v => v + 1);
+=======
+  count=0;
+  counts=signal(0);
+  incrementSimple(){
+    this.count++;
+  }
+  increment(){
+    this.counts.update(v => v+1);
+>>>>>>> 0da46011c4d41811833ef7f32ded61b4167333ce
   }
 }
