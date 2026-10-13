@@ -11,7 +11,6 @@ import { ConferanceService } from '../conferance.service';
 export class ConferanceDetails {
   private readonly conferanceService = inject(ConferanceService);
 
-  // withComponentInputBinding in app.config binds the route's :id parameter here.
   id = input.required<string>();
   conferance = computed(() => this.conferanceService.findById(this.id()));
 }
