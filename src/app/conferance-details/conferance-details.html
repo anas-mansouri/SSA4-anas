@@ -1,2 +1,14 @@
 <h2>Conference Details</h2>
-{{id()}}
+
+@if (conferance(); as conf) {
+  <section class="conference-details">
+    <h3>{{ conf.name }}</h3>
+    <p><strong>Date:</strong> {{ conf.date }}</p>
+    <p><strong>Place:</strong> {{ conf.place }}</p>
+    <p><strong>Conference ID:</strong> {{ conf.id }}</p>
+  </section>
+} @else {
+  <p>Conference with ID {{ id() }} was not found.</p>
+}
+
+<a routerLink="/list">Back to conferences</a>
