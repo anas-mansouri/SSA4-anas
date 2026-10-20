@@ -19,6 +19,11 @@ input {
   font: inherit;
 }
 
+input.error {
+  border-color: #b91c1c;
+  background-color: #fff7f7;
+}
+
 button {
   justify-self: start;
   padding: 0.6rem 1rem;
