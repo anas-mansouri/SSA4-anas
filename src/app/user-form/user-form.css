@@ -1,0 +1,45 @@
+.user-form {
+  max-width: 28rem;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border: 1px solid #d5dbe3;
+  border-radius: 0.5rem;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+input {
+  margin-bottom: 0.75rem;
+  padding: 0.6rem;
+  border: 1px solid #9aa4b2;
+  border-radius: 0.25rem;
+  font: inherit;
+}
+
+button {
+  justify-self: start;
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background: #2563eb;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #9aa4b2;
+  cursor: not-allowed;
+}
+
+.error {
+  margin: -0.5rem 0 0.5rem;
+  color: #b91c1c;
+}
+
+.success {
+  color: #166534;
+}

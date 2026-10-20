@@ -1,0 +1,12 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <label for="name">User</label>
+  <input id="name" name="name" formControlName="name" />
+  @if (userForm.controls.name.invalid && userForm.controls.name.touched) { <small>Name is required.</small> }
+  <label for="email">Mail</label>
+  <input id="email" name="email" type="email" formControlName="email" />
+  @if (userForm.controls.email.invalid && userForm.controls.email.touched) { <small>Enter a valid email.</small> }
+  <label for="password">Password</label>
+  <input id="password" name="password" type="password" formControlName="password" />
+  @if (userForm.controls.password.invalid && userForm.controls.password.touched) { <small>{{ userForm.controls.password.hasError('required') ? 'Password is required.' : 'Password needs 8+ characters.' }}</small> }
+  <button type="submit">Submit</button>
+</form>
